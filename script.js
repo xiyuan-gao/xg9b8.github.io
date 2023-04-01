@@ -1,3 +1,6 @@
+window.onbeforeunload = function() {
+  window.scrollTo(0, 0);
+};
 function showSection(sectionId) {
     const sections = document.querySelectorAll("main section");
     for (const section of sections) {
