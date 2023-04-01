@@ -4,17 +4,6 @@
     box-sizing: border-box;
 }
 
-function showSection(sectionId) {
-    const sections = document.querySelectorAll("main section");
-    for (const section of sections) {
-        if (section.id === sectionId) {
-            section.style.display = "block";
-        } else {
-            section.style.display = "none";
-        }
-    }
-}
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
