@@ -1,318 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    
-    
-    <head>
-        <meta charset="utf-8">
-        <title>
-            WALS Online -
-            Home
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="shortcut icon"
-              href="https://wals.info/static/favicon.ico?v=324215cdeed9a360a4ee5d4be141c5a1"
-              type="image/x-icon" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Language Atlas</title>
+</head>
+<body>
+    <header>
+		<div class="picture-holder">
+		
+			<img src="https://wals.info/static/header.gif"/>
+		
+		</div>
+		
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Languages</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">References</a></li>
+            </ul>
+        </nav>
+		<nav>
+			<ul>
+				<li><a href="#intro">Home</a></li>
+				<li><a href="#languages">Languages</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#maps">Maps</a></li>
+			</ul>
+		</nav>
 
-        <link href="styles.css" rel="stylesheet">
-
-        <script src="https://wals.info/clld-static/js/packed.9a7cf534.js"></script>
-
-        <link rel="unapi-server" type="application/xml" title="unAPI" href="https://wals.info/unapi">
-        <script src="https://wals.info/_js"></script>
-         
-    </head>
-    <body id="r-dataset">
-        
-<div id="header">
-    <a href="https://wals.info/">
-        <img src="https://wals.info/static/header.gif"/>
-    </a>
-</div>
-
-
-        <div id="top" class="navbar navbar-static-top">
-            <div class="navbar-inner">
-                <div class="container-fluid">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                     
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                        
-                            <li id="menuitem_dataset" class="active">
-                                <a href="https://wals.info/" title="Home">Home</a>
-                            </li>
-                        
-                            <li id="menuitem_parameters" class="">
-                                <a href="https://wals.info/feature" title="Features">Features</a>
-                            </li>
-                        
-                            <li id="menuitem_contributions" class="">
-                                <a href="https://wals.info/chapter" title="Chapters">Chapters</a>
-                            </li>
-                        
-                            <li id="menuitem_languages" class="">
-                                <a href="https://wals.info/languoid" title="Languages">Languages</a>
-                            </li>
-                        
-                            <li id="menuitem_sources" class="">
-                                <a href="https://wals.info/refdb" title="References">References</a>
-                            </li>
-                        
-                            <li id="menuitem_contributors" class="">
-                                <a href="https://wals.info/author" title="Authors">Authors</a>
-                            </li>
-                        </ul>
-                    
-                    </div><!--/.nav-collapse -->
-                </div>
-            </div>
-        </div>
-        <div id="contextnavbar" class="navbar navbar-static-top">
-            <div class="navbar-inner">
-                <div class="container-fluid">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target="#second">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <div id="second" class="nav-collapse collapse">
-                        <ul class="nav pull-right">
-                            
-    
-    <li class="">
-        <a href="https://wals.info/about/credits">Credits</a>
-    </li>
-
-    
-    <li class="">
-        <a href="https://wals.info/about/legal">Legal</a>
-    </li>
-
-    
-    <li class="">
-        <a href="https://wals.info/download">Download</a>
-    </li>
-
-    
-    <li class="">
-        <a href="https://wals.info/contact">Contact</a>
-    </li>
-
-
-                        </ul>
-                    </div><!--/.nav-collapse -->
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid">
-            <abbr class="unapi-id" title="https%3A%2F%2Fwals.info%2F"></abbr>
-                <div class="row-fluid">
-                    <div class="span8">
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h2>Welcome to WALS Online</h2>
-
-<p class="lead">
-    The World Atlas of Language Structures (WALS) is a large database of structural
-    (phonological, grammatical, lexical) properties of languages gathered from descriptive
-    materials (such as reference grammars) by a team of
-    <a href="https://wals.info/author">55 authors</a>.
-</p>
-<p>
-    The first version of WALS was published as a book with CD-ROM in 2005 by Oxford University Press.
-    The first online version was published in April 2008.
-</p>
-<p>
-  The 2013 edition of WALS corrects a number of coding errors especially in Chapters 1 and 3.
-  A full list of changes is available
-    <a href="https://github.com/cldf-datasets/wals/blob/master/CHANGES.md" title="here"><i class="icon-share"></i> here</a>.
-</p>
-<p>
-    Starting with the 2013 edition of WALS, we will release and publish sets of
-    corrections periodically. Thus, any citation of WALS Online 2013 should include
-    the particular version, as listed on
-    <a href="https://doi.org/10.5281/zenodo.3606197" title="Zenodo"><i class="icon-share"></i> Zenodo</a>.
-</p>
-<p>
-    WALS Online is a publication of the
-    <a href="https://www.eva.mpg.de" title="Max Planck Institute for Evolutionary Anthropology"><i class="icon-share"></i> Max Planck Institute for Evolutionary Anthropology</a>.
-    It is a separate publication, edited by
-    Dryer, Matthew S. & Haspelmath, Martin (Leipzig: Max Planck Institute for Evolutionary Anthropology, 2013).
-    The main programmer is Robert Forkel.
-</p>
-
-<h3>How to use WALS Online</h3>
-<p>
-    Using WALS Online requires a browser with Javascript enabled.
-</p>
-<p>
-    You find the features or chapters of WALS through the items "Features" and "Chapters"
-    in the navigation bar.
-</p>
-<p>
-  You can also browse and search for languages through the item "Languages" on the navigation bar.
-</p>
-<p>
-    You can search for references through the item "References", and once you have
-    navigated to a particular feature, you see a second navigation bar with citation
-    information and various export options.
-</p>
-
-<h3>How to cite WALS Online</h3>
-<p>
-  It is important to cite the specific chapter that you are taking your information from,
-  not just the general work
-  "The World Atlas of Language Structures Online" (Dryer, Matthew S. & Haspelmath, Martin 2013),
-  unless you are citing data from more than 25 chapters simultaneously.
-</p>
-<p>
-  We recommend that you cite
-</p>
-  <ul class="unstyled">
-    <li>
-    the general work as <button class="btn" id="cite-button-wals" onclick="CLLD.Modal.show(&#34;WALS Online&#34;, &#34;https://wals.info/void.md.html&#34;)" type="button">cite</button>
-<blockquote>
-    Dryer, Matthew S. & Haspelmath, Martin (eds.) 2013.
-<br />
-WALS Online (v2020.3) [Data set]. Zenodo.
-<br />
-https://doi.org/10.5281/zenodo.7385533
-<br />
-(Available online at https://wals.info, Accessed on 2023-04-01.)
-<br />
-
-</blockquote>
-    </li>
-    <li>
-    and WALS Online chapters as in the following example
-<blockquote>
-    Ian Maddieson. 2013. Consonant Inventories.
-<br />
-In: Dryer, Matthew S. & Haspelmath, Martin (eds.)
-<br />
-WALS Online (v2020.3) [Data set]. Zenodo.
-<br />
-https://doi.org/10.5281/zenodo.7385533
-<br />
-(Available online at http://wals.info/chapter/1, Accessed on 2023-04-01.)
-</blockquote>
-    </li>
-  </ul>
-
-<h3>Interactive Reference Tool (WALS program)</h3>
-<p>
-    The World Atlas of Language Structures was published as a book with a CD-ROM in summer 2005.
-    The CD-ROM contains the "Interactive Reference Tool (WALS program)" as a standalone application
-    for Mac OSX, Mac OS9.2 and Windows 2000, XP written by
-    <a href="https://www.eva.mpg.de/linguistic-and-cultural-evolution/staff/hans-joerg-bibiko/" title="Hans-Jörg Bibiko"><i class="icon-share"></i> Hans-Jörg Bibiko</a>.
-    To download the
-    "Interactive Reference Tool (WALS program)" please follow the link
-    <a href="https://www.eva.mpg.de/lingua/research/tool.php" title="https://www.eva.mpg.de/lingua/research/tool.php"><i class="icon-share"></i> https://www.eva.mpg.de/lingua/research/tool.php</a>.
-</p>
-<h3>Terms of use</h3>
-<p>
-    The content of this web site is published under a Creative Commons Licence.
-    We invite the community of users to think about further applications for the available data
-    and look forward to your comments, feedback and questions.
-</p>
-
-
-
-                    </div>
-                    <div id="sidebar" class="span4">
-                        
-    <div class="alert alert-info">
-        The functionality to comment on WALS Online data via an associated blog has been
-        replaced with mailto links. See also the
-        <a href="https://wals.info/contact">contact page</a> for information on how to get in contact with us.
-    </div>
-
-                    </div>
-                </div>
-            <div class="row-fluid">
-                <div class="span12">
-                <footer>
-                
-                    <div class="row-fluid" style="padding-top: 15px; border-top: 1px solid black;">
-                        <div class="span3">
-                            <a href="https://www.eva.mpg.de"
-                               title="Max Planck Institute for Evolutionary Anthropology, Leipzig">
-                                <img width="80" src="https://wals.info/clldmpg-static/minerva.png" />
-                            </a>
-                        </div>
-                        <div class="span6" style="text-align: center;">
-                            
-                            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
-                                <img alt="License" style="border-width:0" src="https://wals.info/clld-static/images/cc-by.png" />
-                            </a>
-                            <br />
-                            
-                            <span class="Dataset" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type" xmlns:dct="http://purl.org/dc/terms/">WALS Online</span>
-                            edited by
-                            <span xmlns:cc="https://creativecommons.org/ns#"
-                                  property="cc:attributionName"
-                                  rel="cc:attributionURL">
-                                Dryer, Matthew S. &amp; Haspelmath, Martin
-                           </span>
-                            
-                            <br />
-                            is licensed under a
-                            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
-                                Creative Commons Attribution 4.0 International License</a>.
-                        </div>
-                        <div class="span3" style="text-align: right;">
-                                <a class="clld-privacy-policy" href="https://www.eva.mpg.de/privacy-policy.html">Privacy Policy</a><br/>
-                            <a class="clld-disclaimer" href="https://wals.info/about/legal">Disclaimer</a>
-                            <br/>
-                            <a href="https://github.com/clld/wals3">
-                                <i class="icon-share">&nbsp;</i>
-                                Application source
-                                    (v2014.2-195-g9a8fcf4)
-                                on<br/>
-                                <img height="25" src="https://wals.info/clld-static/images/GitHub_Logo.png" />
-                            </a>
-                        </div>
-                    </div>
-                
-                </footer>
-                </div>
-            </div>
-        </div>
-
-        <div id="Modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="ModalLabel"></h3>
-            </div>
-            <div id="ModalBody" class="modal-body">
-            </div>
-        </div>
-
-        <script>
-             
-        </script>
-    </body>
+    </header>
+    <main>
+        <section class="intro" id="intro">
+            <h1>Language Atlas</h1>
+            <p>Welcome to the Language Atlas, a comprehensive resource for information about languages and their features.</p>
+        </section>
+        <section class="languages" id="languages">
+            <h2>Explore Languages</h2>
+            <p>Discover information about the world's languages and their features.</p>
+        </section>
+        <section class="features" id="features">
+            <h2>Explore Features</h2>
+            <p>Learn about the diverse range of linguistic features found in the world's languages.</p>
+        </section>
+        <section class="maps" id="maps">
+            <h2>Explore Maps</h2>
+            <p>Visualize language features on interactive maps to see geographic distributions.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Language Atlas. All rights reserved.</p>
+    </footer>
+</body>
 </html>
