@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Language Atlas</title>
 </head>
 <body>
     <header>
-		<div class="picture-holder">
-		
-			<img src="https://wals.info/static/header.gif"/>
-		
-		</div>
-		
-		<nav>
-			<ul>
-				<li><a href="#intro">Home</a></li>
-				<li><a href="#languages">Languages</a></li>
-				<li><a href="#features">Features</a></li>
-				<li><a href="#maps">Maps</a></li>
-			</ul>
-		</nav>
-
+        <nav>
+            <ul>
+                <li><a href="#intro" onclick="showSection('intro')">Home</a></li>
+                <li><a href="#languages" onclick="showSection('languages')">Languages</a></li>
+                <li><a href="#features" onclick="showSection('features')">Features</a></li>
+                <li><a href="#maps" onclick="showSection('maps')">Maps</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="intro" id="intro">
