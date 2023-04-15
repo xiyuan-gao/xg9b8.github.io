@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <title>Xiyuan Gao Project</title>
 </head>
 <body>
@@ -38,6 +40,36 @@
         <section class="maps" id="maps">
             <h2>Explore Maps</h2>
             <p>Visualize language features on interactive maps to see geographic distributions.</p>
+			<div class="container">
+			<h1>Interactive Map</h1>
+			<div class="filter">
+				<label for="languageFilter">Filter by language:</label>
+				<select id="languageFilter">
+					<option value="">All Languages</option>
+					<!-- Add options for each unique language in your data -->
+				</select>
+			</div>
+			<div id="map" style="height: 400px; margin-bottom: 20px;"></div>
+			<table id="locationsTable" class="display">
+				<thead>
+
+					<tr>
+						<th>Country</th>
+						<th>State</th>
+						<th>City</th>
+						<th>Language</th>
+						<th>Longitude</th>
+						<th>Latitude</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- Add rows for each location in your data -->
+				</tbody>
+			</table>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+		<script src="script.js"></script>
         </section>
     </main>
     <footer>

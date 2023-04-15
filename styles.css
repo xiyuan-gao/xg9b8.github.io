@@ -73,3 +73,16 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.filter {
+    margin-bottom: 1rem;
+}
+.filters-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
