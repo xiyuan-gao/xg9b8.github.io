@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/dist/leaflet-color-markers.css" />
-
+    
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <title>Xiyuan Gao Project</title>
 </head>
@@ -17,9 +16,9 @@
         <nav>
             <ul>
                 <li><a href="#home" onclick="showSection('home')">Home</a></li>
-                <li><a href="#languages" onclick="showSection('languages')">Classification</a></li>
-                <li><a href="#features" onclick="showSection('features')">Features</a></li>
-                <li><a href="#maps" onclick="showSection('maps')">Maps</a></li>
+                <li><a href="#languages" onclick="showSection('languages')">Language</a></li>
+                <li><a href="#features" onclick="showSection('features')">Feature</a></li>
+                <li><a href="#maps" onclick="showSection('maps')">Map</a></li>
             </ul>
         </nav>
     </header>
@@ -36,10 +35,6 @@
             <p>Discover information about the world's languages and their features.</p>
         </section>
         <section class="features" id="features">
-            <h2>Explore Features</h2>
-            <p>Learn about the diverse range of linguistic features found in the world's languages.</p>
-        </section>
-        <section class="maps" id="maps">
             <h2>Explore Maps</h2>
             <p>Visualize language features on interactive maps to see geographic distributions.</p>
 			<div class="container">
@@ -73,6 +68,10 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 		<script src="script.js"></script>
+        </section>
+        <section class="maps" id="maps">
+            <h2>Explore Features</h2>
+            <p>Learn about the diverse range of linguistic features found in the world's languages.</p>
         </section>
     </main>
     <footer>
